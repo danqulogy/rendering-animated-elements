@@ -5,15 +5,16 @@
 
         canvas = $.createElement('canvas');
         c = canvas.getContext('2d');
-        canvas.width = 300;
-        canvas.height = 300;
-        
-        c.fillStyle = '#000';
-        c.fillRect(0, 0, canvas.width, canvas.height);
 
-        
+        img = new Image();
+        img.src = 'html5.png';
 
-        body.appendChild(canvas);
-
+        img.addEventListener('load', function(){
+            canvas.width = 300;
+            canvas.height = 300;
+            
+            c.drawImage(img,0,0, 50, 70);
+            body.appendChild(canvas);
+        });
     },false);
 }(document));
