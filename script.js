@@ -28,7 +28,7 @@
             obj.style.top = y + 'px';
             requestAnimationFrame(update);
         }
-        body.appendChild(obj);
+        // body.appendChild(obj);
 
     }, false);
 }(document));
