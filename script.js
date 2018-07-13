@@ -15,7 +15,7 @@
         vx = 4;
 
 
-        update();
+        // update();
 
         function update() {
             x += vx;
